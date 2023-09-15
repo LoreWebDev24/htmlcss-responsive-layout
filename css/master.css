@@ -1,27 +1,34 @@
-/* RESETTIN' RULES  */
+/* RESETTING RULES  */
 * {
-    box-sizing: border-box;
+    margin: 0;
     padding: 0;
-    maxgin:0;
+    box-sizing: border-box;
 }
 
-ul,li,menu {
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul,
+ol,
+menu {
     list-style: none;
-    color: currentColor;
-}
 
-a {
-    text-decoration: none;
-    color: currentColor;
 }
 
 img {
     width: 100%;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
+
+a {
+    text-decoration: none;
+    color: currentColor;
+    display: inline-block;
 }
+/* END OF RESETTING RULES  */
+
+/* VAR COLORS  */
 
 :root {
     --blue:#0084FD;
@@ -33,19 +40,90 @@ body {
 
 }
 
-/* END OF RESETTIN' RULES  */
+/* CONTAINERS  */
 
-.container-big { 
-    width: 1200px ;
+.container {
+    max-width: 1164px;
     margin: 0 auto;
 }
 
-.container-mid {
-    width: 1050px;
+.container-medium {
+    max-width: 1050px;
     margin: 0 auto;
 }
 
 .container-small {
-    width: 880px;
+    max-width: 880px;
     margin: 0 auto;
 }
+
+/* FLEX  */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4 {
+    flex-basis: calc((100% / 12) * 4);
+}
+
+.col-6 {
+    flex-basis: calc((100% / 12) * 6);
+}
+
+.col-8 {
+    flex-basis: calc((100% / 12) * 8);
+}
+
+.col-12 {
+    flex-basis: calc((100% / 12) * 12);
+}
+
+/* UTILITYS  */
+
+.justify-between {
+    justify-content: space-between;
+}
+.align-items-center {
+    align-items: center;
+}
+
+
+/* COMPONENTS */
+
+.button {
+    color: black;
+    line-height: 40px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 0 18px;
+}
+
+/* HEADER */
+
+.page-header {
+    background-color: var(--blue);
+    padding: 20px;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+}
+
+.hamburger {
+    display: none;
+    font-size: 32px;
+}
+
+.li-header {
+    color: white;
+}
+
