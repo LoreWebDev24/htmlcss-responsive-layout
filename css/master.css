@@ -150,12 +150,15 @@ a {
 .card {
     border-radius: 20px;
     background-color: var(--light-blue);
-    text-align: center;
     padding: 20px;
     height: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.card:not(.card-with-phone) {
+    text-align: center;
 }
 
 .card-with-phone {
