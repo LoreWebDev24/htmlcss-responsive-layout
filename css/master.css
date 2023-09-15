@@ -1,0 +1,51 @@
+/* RESETTIN' RULES  */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    maxgin:0;
+}
+
+ul,li,menu {
+    list-style: none;
+    color: currentColor;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --blue:#0084FD;
+    --light-blue:#B5DDFF;
+    --purple:#9792E4;
+    --yellow:#FDC15F;
+    --dark-grey:#333333;
+    --light:#FFFFFF;
+
+}
+
+/* END OF RESETTIN' RULES  */
+
+.container-big { 
+    width: 1200px ;
+    margin: 0 auto;
+}
+
+.container-mid {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+.container-small {
+    width: 880px;
+    margin: 0 auto;
+}
