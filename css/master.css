@@ -142,7 +142,7 @@ a {
 .hero {
     background-color: white;
     padding-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 }
 
 .smartphone {
@@ -217,6 +217,29 @@ div.col-4.padding-left {
 
 /* STARTEGIC SECTION */
 
-.starts {
+.strats {
     background-color: var(--purple);
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.strats-img {
+    width: 100%;
+}
+
+.card__strats-2 {
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.card__strats-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.starts-pa {
+    font-size: 18px;
+    color: white;
 }
