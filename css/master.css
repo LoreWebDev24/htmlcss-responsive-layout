@@ -73,6 +73,8 @@ a {
 
 .col-6 {
     flex-basis: calc((100% / 12) * 6);
+    display: flex;
+    justify-content: center;
 }
 
 .col-8 {
@@ -147,7 +149,7 @@ a {
 
 .hero {
     background-color: white;
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 100px;
 }
 
@@ -221,6 +223,17 @@ div.col-4.padding-left {
     flex-grow: 1;
 }
 
+.blu-button {
+    display: block;
+    text-align: center;
+    width: 65;
+    background-color: var(--blue);
+    font-size: 20px;
+    color: white;
+    border-radius: 999px;
+    padding: 10px;
+}
+
 /* STARTEGIC SECTION */
 
 .strats {
@@ -235,7 +248,7 @@ div.col-4.padding-left {
 }
 
 .strats-img-2 {
-    width: 70%;
+    width: 60%;
     padding-bottom: 20px;
 }
 
@@ -248,7 +261,9 @@ div.col-4.padding-left {
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    width: 90%;
 }
 
 .card__strats-1 {
@@ -297,4 +312,34 @@ em {
     align-items: center;
 }
 
+/* TEAM SECTION */
 
+.team-section {
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+h6 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+h2 {
+    text-align: center;
+    font-size: 34px;
+    color: var(--purple);
+}
+
+.team-pa {
+    font-size: 18px;
+    font-weight: 550;
+    text-align: center;
+}
+
+.titles__container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
