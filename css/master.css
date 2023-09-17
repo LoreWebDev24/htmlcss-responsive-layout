@@ -609,3 +609,29 @@ footer {
     color: var(--purple);
     text-decoration: underline;
 }
+
+/* MEDIA QUERY  */  
+
+/* NAVBAR */
+
+@media screen and (max-width: 1150px) {
+
+    .container {
+        width: 100%;
+	}
+
+    .navbar-list {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger:hover {
+        cursor: pointer;
+    }
+
+}
+
+/* HERO */
