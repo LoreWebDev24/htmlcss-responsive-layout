@@ -317,7 +317,7 @@ em {
 .team-section {
     background-color: white;
     padding-top: 100px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
 }
 
 h6 {
@@ -336,6 +336,7 @@ h2 {
     font-size: 18px;
     font-weight: 550;
     text-align: center;
+    padding-bottom: 40px;
 }
 
 .titles__container {
@@ -382,4 +383,19 @@ h2 {
 .team-quote {
     align-self: flex-start;
 }
+
+/* BENEFIT SECTION */
+
+.benefit {
+    background-color: var(--purple);
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.benefit__title {
+    font-size: 34px;
+    color: white;
+    padding-bottom: 40px;
+}
+
 
