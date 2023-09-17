@@ -343,3 +343,43 @@ h2 {
     flex-direction: column;
     gap: 25px;
 }
+
+.team-images {
+    width: 200px;
+    height: 200px;
+    display:block;
+    border-radius: 50%;
+    aspect-ratio: 16/9;
+}
+
+.card-team-member {
+    display: flex;
+    background-color: var(--purple);
+    border-radius: 50px;
+    padding:20px;
+}
+
+.p__card-team-member {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    align-self: center;
+}
+
+.fa-solid.fa-quote-right, .fa-solid.fa-quote-left {
+    font-size: 26px;
+}
+
+.card_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    gap: 20%;
+}
+
+.team-quote {
+    align-self: flex-start;
+}
+
