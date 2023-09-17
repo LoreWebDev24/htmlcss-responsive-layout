@@ -66,9 +66,13 @@ a {
     row-gap: 20px;
 }
 
+.col-3 {
+    flex-basis: calc((100% / 12) * 3);
+    padding-left: 100px;
+}
+
 .col-4 {
     flex-basis: calc((100% / 12) * 4);
-
 }
 
 .col-6 {
@@ -79,7 +83,14 @@ a {
 
 .col-8 {
     flex-basis: calc((100% / 12) * 8);
+}
 
+.col-9 {
+    flex-basis: calc((100% / 12) * 9);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: flex-start;
 }
 
 .col-12 {
@@ -226,8 +237,8 @@ div.col-4.padding-left {
 .blu-button {
     display: block;
     text-align: center;
-    width: 65;
     background-color: var(--blue);
+    width: 65%;
     font-size: 20px;
     color: white;
     border-radius: 999px;
@@ -302,6 +313,7 @@ em {
 }
 
 .purple-button {
+    display: block;
     background-color: var(--purple);
     border-radius: 50%;
     width: 36px;
@@ -382,6 +394,8 @@ h2 {
 
 .team-quote {
     align-self: flex-start;
+    color: white;
+    font-size: 18px;
 }
 
 /* BENEFIT SECTION */
@@ -398,4 +412,109 @@ h2 {
     padding-bottom: 40px;
 }
 
+.benefit__number {
+    color: var(--purple);
+    font-size: 40px;
+}
 
+.benefit__p-title {
+    color: var(--purple);
+}
+
+.benefit__purple-button {
+    background-color: var(--purple);
+    display: block;
+    border-radius: 999px;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.benefit__card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.benefit__col {
+    padding-right: 20px;
+}
+
+/* ABOUT US SECTION */
+
+.about-us {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-color: white;
+}
+
+.about-us__title {
+    text-align: left;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.about-us__p {
+    line-height: 2.4em;
+    font-weight: 500;
+}
+
+.about-imgs {
+    border-radius: 50%;
+}
+
+.linkedin-card {
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+
+.linkedin-figure {
+    position: relative;
+}
+
+.icon-on-absolute {
+    position: absolute;
+    right: -25px;
+    top: 20px;
+    color: var(--purple);
+}
+
+i.fa-absolute.fa-solid.fa-quote-left {
+    font-size: 90px;
+}
+
+.linkedin__title{
+    color: var(--purple);
+    font-size: 20px;
+}
+
+.linkedin__purple-button {
+    background-color: var(--purple);
+    display: block;
+    border-radius: 999px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+}
+
+.fa-brands.fa-linkedin {
+    padding-right: 10px;
+}
+
+/* GET STARTED SECTION */
+
+.get-started {
+    background-color: var(--purple);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
