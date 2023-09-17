@@ -139,10 +139,7 @@ a {
 
 .logo {
     display: block;
-}
-
-.phone {
-    padding-top: 25%;
+  
 }
 
 .hamburger {
@@ -186,21 +183,31 @@ a {
 .card-with-phone {
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: column;
-    width: 50%;
-    gap: 15%;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 20px;
+    padding-bottom: 0px;
     border-radius: 20px;
     background-color: var(--blue);
 }
 
+.phone-top{
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+
+.phone-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 .col-with-phone {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 10%;
-    background-color: var(--light-blue);
-    border-radius: 20px;
-    flex-basis: 756px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-right: 20px;
 }
 
 div.col-4.padding-left {
@@ -612,7 +619,13 @@ footer {
 
 /* MEDIA QUERY  */  
 
-/* NAVBAR */
+@media screen and (max-width: 1210px) {
+
+    section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
 
 @media screen and (max-width: 1150px) {
 
@@ -634,4 +647,37 @@ footer {
 
 }
 
-/* HERO */
+@media screen and (max-width: 934px) {
+
+    .card-with-phone {
+        flex-direction: column;
+    }
+
+    .phone {
+        width: 30%;
+    }
+
+    .stats-row {
+        flex-direction: column;
+    }
+
+    .card__strats-2 {
+        width: 100%;
+    }
+
+    .col-6 {
+        width: 100%;
+    }
+
+    .benefit__col {
+        flex-basis: 50%;
+    }
+
+    .col-9 {
+        flex-basis: 60%;
+    }
+
+    .col-3 {
+        flex-basis: 40%;
+    }
+}
