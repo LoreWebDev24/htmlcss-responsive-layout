@@ -492,8 +492,8 @@ h2 {
 
 .icon-on-absolute {
     position: absolute;
-    right: -25px;
-    top: 20px;
+    right: 0px;
+    top: 0px;
     color: var(--purple);
 }
 
@@ -566,6 +566,7 @@ h1 {
 
 .copy-span {
     font-size: 13px;
+    text-align: center;
 }
 
 .underlined {
@@ -576,7 +577,6 @@ h1 {
     display: block;
     text-align: center;
     background-color: white;
-    width: 30%;
     font-size: 18px;
     font-weight: 700;
     color: var(--purple);
@@ -619,6 +619,22 @@ footer {
 
 /* MEDIA QUERY  */  
 
+@media screen and (max-width: 1231px) {
+
+    i.fa-absolute.fa-solid.fa-quote-left {
+        font-size: 40px;
+    }
+
+    .col-9 {
+        flex-basis: 60%;
+    }
+
+    .col-3 {
+        flex-basis: 40%;
+    }
+
+}
+
 @media screen and (max-width: 1210px) {
 
     section {
@@ -654,7 +670,7 @@ footer {
     }
 
     .phone {
-        width: 30%;
+        width: 70%;
     }
 
     .stats-row {
@@ -667,17 +683,88 @@ footer {
 
     .col-6 {
         width: 100%;
+        padding-left: 0px;
     }
 
     .benefit__col {
         flex-basis: 50%;
     }
 
-    .col-9 {
-        flex-basis: 60%;
+    .footer__p {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 605px) {
+
+    .col-12, .col-9, .col-8, .col-6, .col-4, .col-3 {
+        flex-basis: 100%;
+    }
+
+    .col-with-phone, .col-4.padding-right {
+        padding-right: 0px;
     }
 
     .col-3 {
-        flex-basis: 40%;
+        padding-left: 0px;
     }
+
+    img.about-imgs {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .col-12, .col-9, .col-8, .col-6, .col-4, .col-3 {
+        flex-basis: 100%;
+    }
+
+    .col-with-phone, .col-4.padding-right {
+        padding-right: 0px;
+    }
+
+    .col-3 {
+        padding-left: 0px;
+    }
+
+    div.phone-bottom {
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card-team-member {
+        flex-direction: column;
+        gap:20px
+    }
+
+    .row-team {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team-images {
+        align-self: center;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2.get-started__title {
+        font-size: 24px;
+    }
+
+    .card_body {
+        gap: 20px;
+        justify-self: center;
+        align-self: center;
+        padding-left: 0px;
+    }
+
+    .team-quote {
+        align-self: center;
+    }
+
 }
